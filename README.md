@@ -1,0 +1,1 @@
+This is the website for Magiweb. From here you will be able to create and manage events
