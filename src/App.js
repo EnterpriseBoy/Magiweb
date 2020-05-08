@@ -1,11 +1,17 @@
 import React from 'react';
 import './App.css';
-import Menubase from './Components/menubar/Menubar';
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/footer';
 
 function App() {
   return (
     <div className="App">
-      <Menubase name="Niamh"/>
+      <div>
+      <Header/>
+      </div>
+      <div>
+      <Footer/>
+      </div>
     </div>
   );
 }
