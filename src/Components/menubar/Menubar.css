@@ -1,27 +1,35 @@
 #mainNav {
-  min-height: 56px;
+  min-height: 60px;
   background-color: #fff;
 }
 
-#mainNav .navbar-toggler {
-  font-size: 80%;
-  padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+.nav-item {
+  margin:10px;
+  font-family: Arial;
+  font-size: 20px;
+  color: grey;
+  padding-bottom: 5px;
 }
 
-#mainNav .navbar-toggler:focus {
-  outline: none;
+.navbar-brand{
+  margin:10px;
+  font-family: Arial;
+  font-size: 20px;
+  color: grey;
+  padding-bottom: 5px;
 }
 
-#mainNav .navbar-brand {
-  color: #161616;
-  font-weight: 700;
-  padding: .9rem 0;
-}
 
-#mainNav .navbar-nav .nav-item:hover {
+#mainNav .navbar-nav .nav-item:hover{
   color: fade(white, 80%);
   outline: none;
   background-color: transparent;
+  color: black;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
 }
+
+
+
+
+
