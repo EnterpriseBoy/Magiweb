@@ -1,8 +1,11 @@
 .footer{
   border: 1px solid black;
-  width: 90%;
-  background-color: green;
 }
 
+.icon{
+  margin: 20px;
+  float: left;
+  color: gray;
+}
 
 
