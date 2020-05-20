@@ -2,10 +2,41 @@
   border: 1px solid black;
 }
 
-.icon{
+.iconLeft{
   margin: 20px;
   float: left;
   color: gray;
 }
+
+.iconRight{
+  margin: 20px;
+  float: right;
+  color: gray;
+}
+
+.iconCenter{
+  margin: 20px;
+  float: center;
+  color: gray;
+}
+
+.iconCenterCommon{
+  margin: 0 auto;
+  margin-top:5px;
+}
+
+.textCenter{
+  float: center;
+  color: gray;
+}
+
+.boxed {
+  border: 1px solid black ;
+  height: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px;
+}
+
 
 
