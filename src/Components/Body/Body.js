@@ -1,12 +1,12 @@
 import React from "react";
-import "./Body.css";
 import "../../CSS/bootstrap.min.css";
+import styles from "./Body.module.css";
 
 
  
 function Body(props) {
   return (
-    <div>Hello</div>
+    <div className={styles.boxed}/>
     );
 }
 
