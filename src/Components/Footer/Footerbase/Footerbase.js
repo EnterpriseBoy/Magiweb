@@ -14,21 +14,15 @@ function Footerbase(props) {
         <container>
           <Row>
             <Col className={styles.boxed}>
-              <Row><FontAwesomeIcon icon={faMap} size=".5x" className={styles.iconCenterCommon} /></Row>
-              <Row><div className={styles.iconCenterCommon}>EMAIL</div></Row>
-              <Row><FontAwesomeIcon icon={faRuler} size=".5x" className={styles.iconCenterCommon} /></Row>
+              <Row><FontAwesomeIcon icon={faMap} size=".3x" className={styles.iconCenterCommon} /></Row>
               <Row><div className={styles.iconCenterCommon}>72 Patrician Villas Blackrock</div></Row>
             </Col>
             <Col className={styles.boxed}>
-              <Row><FontAwesomeIcon icon={faMap} size=".5x" className={styles.iconCenterCommon} /></Row>
-              <Row><div className={styles.iconCenterCommon}>EMAIL</div></Row>
-              <Row><FontAwesomeIcon icon={faRuler} size=".5x" className={styles.iconCenterCommon} /></Row>
+              <Row><FontAwesomeIcon icon={faMap} size=".3x" className={styles.iconCenterCommon} /></Row>
               <Row><div className={styles.iconCenterCommon}>72 Patrician Villas Blackrock</div></Row>
             </Col>
             <Col className={styles.boxed}>
-              <Row><FontAwesomeIcon icon={faMap} size=".5x" className={styles.iconCenterCommon} /></Row>
-              <Row><div className={styles.iconCenterCommon}>EMAIL</div></Row>
-              <Row><FontAwesomeIcon icon={faRuler} size=".5x" className={styles.iconCenterCommon} /></Row>
+              <Row><FontAwesomeIcon icon={faMap} size=".3x" className={styles.iconCenterCommon} /></Row>
               <Row><div className={styles.iconCenterCommon}>72 Patrician Villas Blackrock</div></Row>
             </Col>
           </Row>

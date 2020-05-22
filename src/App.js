@@ -7,13 +7,13 @@ import Body from './Components/Body/Body';
 function App() {
   return (
     <div className="App">
-      <div>
+      <div className="header">
       <Header/>
       </div>
       <div>
       <Body/>
       </div>
-      <div>
+      <div className="footer">
       <Footer/>
       </div>
     </div>
