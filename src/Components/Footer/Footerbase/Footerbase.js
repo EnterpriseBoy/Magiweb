@@ -3,7 +3,7 @@ import styles from "./Footerbase.module.css";
 import "../../../CSS/bootstrap.min.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faMap, faRuler, faMailBulk } from '@fortawesome/free-solid-svg-icons'
+import { faMap } from '@fortawesome/free-solid-svg-icons'
 
 import { Row, Col } from 'reactstrap';
 
