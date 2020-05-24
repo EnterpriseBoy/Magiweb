@@ -1,6 +1,7 @@
 {
   "name": "magiweb",
   "version": "0.1.0",
+  "homepagehttps": "//github.com/EnterpriseBoy/Magiweb.git",
   "engines": {
     "npm": "16.4.4",
     "node": "12.16.3"
@@ -28,7 +29,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    “deploy”: “gh-pages -d build”
     },
   "eslintConfig": {
     "extends": "react-app"
