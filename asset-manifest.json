@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/https//github.com/EnterpriseBoy/Magiweb.git/static/css/main.eec34bc7.chunk.css",
+    "main.js": "/https//github.com/EnterpriseBoy/Magiweb.git/static/js/main.aa63a565.chunk.js",
+    "main.js.map": "/https//github.com/EnterpriseBoy/Magiweb.git/static/js/main.aa63a565.chunk.js.map",
+    "runtime-main.js": "/https//github.com/EnterpriseBoy/Magiweb.git/static/js/runtime-main.c90993f9.js",
+    "runtime-main.js.map": "/https//github.com/EnterpriseBoy/Magiweb.git/static/js/runtime-main.c90993f9.js.map",
+    "static/js/2.2e29df63.chunk.js": "/https//github.com/EnterpriseBoy/Magiweb.git/static/js/2.2e29df63.chunk.js",
+    "static/js/2.2e29df63.chunk.js.map": "/https//github.com/EnterpriseBoy/Magiweb.git/static/js/2.2e29df63.chunk.js.map",
+    "index.html": "/https//github.com/EnterpriseBoy/Magiweb.git/index.html",
+    "precache-manifest.3e966f76c49f649af539702d78c06500.js": "/https//github.com/EnterpriseBoy/Magiweb.git/precache-manifest.3e966f76c49f649af539702d78c06500.js",
+    "service-worker.js": "/https//github.com/EnterpriseBoy/Magiweb.git/service-worker.js",
+    "static/css/main.eec34bc7.chunk.css.map": "/https//github.com/EnterpriseBoy/Magiweb.git/static/css/main.eec34bc7.chunk.css.map",
+    "static/js/2.2e29df63.chunk.js.LICENSE.txt": "/https//github.com/EnterpriseBoy/Magiweb.git/static/js/2.2e29df63.chunk.js.LICENSE.txt",
+    "static/media/Header.module.css": "/https//github.com/EnterpriseBoy/Magiweb.git/static/media/Background.429ed557.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c90993f9.js",
+    "static/js/2.2e29df63.chunk.js",
+    "static/css/main.eec34bc7.chunk.css",
+    "static/js/main.aa63a565.chunk.js"
+  ]
+}
