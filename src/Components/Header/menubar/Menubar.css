@@ -19,7 +19,17 @@
 }
 
 
-#mainNav .navbar-nav .nav-item:hover{
+.nav-item-selected .nav-item:hover{
+  margin-bottom: 9px;
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+  color: black;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.nav-item-selected{
   margin-bottom: 9px;
   color: fade(white, 80%);
   outline: none;
