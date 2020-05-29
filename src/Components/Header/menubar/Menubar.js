@@ -7,10 +7,11 @@ import "../../../CSS/bootstrap.min.css";
 function Menubase(props) {
 
   const[selectedNavItem,setSelectedNavItem] = useState("nav-link js-scroll-trigger");
+  const selecteItem = "nav-link js-scroll-trigger nav-item-selected"
+  const notSelecteItem = "nav-item js-scroll-trigger"
 
   function itemSelected(item){
-    item==="nav-link js-scroll-trigger nav-item-selected"? setSelectedNavItem("nav-link js-scroll-trigger nav-item-selected") :setSelectedNavItem("nav-link js-scroll-trigger nav-item-selected")
-    alert(item);
+    setSelectedNavItem(item);
   }
 
   return (
@@ -25,17 +26,17 @@ function Menubase(props) {
         </a>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className={selectedNavItem} href="#about" id="about1" onClick={e => itemSelected(e.target.className)}>
-                About
+              <a className={selectedNavItem === "about" ? selecteItem : notSelecteItem} href="#about" id="about" onClick={e => itemSelected(e.target.id)}>
+                 About
             </a>
             </li>
             <li className="nav-item">
-              <a className={selectedNavItem} href="#projects">
+              <a className={selectedNavItem === "projects" ? selecteItem : notSelecteItem} href="#projects" id="projects" onClick={e => itemSelected(e.target.id)}>
                 Projects
             </a>
             </li>
             <li className="nav-item">
-              <a className={selectedNavItem} href="#signup">
+              <a className={selectedNavItem === "signup" ? selecteItem: "nav-link js-scroll-trigger"} href="#signup"  id="signup" onClick={e => itemSelected(e.target.id)}>
                 Contact
             </a>
             </li>

@@ -19,7 +19,7 @@
 }
 
 
-.nav-item-selected .nav-item:hover{
+.nav-item:hover{
   margin-bottom: 9px;
   color: fade(white, 80%);
   outline: none;
