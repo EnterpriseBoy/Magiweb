@@ -6,12 +6,12 @@ import "../../../CSS/bootstrap.min.css";
 
 function Menubase(props) {
 
-  const[selectedNavItem,setSelectedNavItem] = useState("nav-link js-scroll-trigger");
-  const selecteItem = "nav-link js-scroll-trigger nav-item-selected"
-  const notSelecteItem = "nav-item js-scroll-trigger"
+  const[selectButton,setSelectButton] = useState("nav-item");
+  const selecteButton = "nav-item-selected"
+  const notSelectedButton = "nav-item"
 
-  function itemSelected(item){
-    setSelectedNavItem(item);
+  function itemSelected(button){
+    setSelectButton(button);
   }
 
   return (
@@ -25,19 +25,19 @@ function Menubase(props) {
             Event Staff
         </a>
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <a className={selectedNavItem === "about" ? selecteItem : notSelecteItem} href="#about" id="about" onClick={e => itemSelected(e.target.id)}>
-                 About
+            <li className={selectButton === "about"? selecteButton: notSelectedButton }>
+              <a className="nav-link js-scroll-trigger" href="#about" id="about" onClick={e => itemSelected(e.target.id)}>
+                About
             </a>
             </li>
-            <li className="nav-item">
-              <a className={selectedNavItem === "projects" ? selecteItem : notSelecteItem} href="#projects" id="projects" onClick={e => itemSelected(e.target.id)}>
+            <li className={selectButton === "projects"? selecteButton: notSelectedButton }>
+              <a className="nav-link js-scroll-trigger" id="projects" href="#projects" onClick={e => itemSelected(e.target.id)}>
                 Projects
             </a>
             </li>
-            <li className="nav-item">
-              <a className={selectedNavItem === "signup" ? selecteItem: "nav-link js-scroll-trigger"} href="#signup"  id="signup" onClick={e => itemSelected(e.target.id)}>
-                Contact
+            <li className={selectButton === "login"? selecteButton: notSelectedButton }>
+              <a className="nav-link js-scroll-trigger" id="login" href="#signup" onClick={e => itemSelected(e.target.id)}>
+                Login
             </a>
             </li>
           </ul>

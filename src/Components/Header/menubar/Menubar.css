@@ -30,19 +30,18 @@
 }
 
 .nav-item-selected{
-  margin-bottom: 9px;
-  color: fade(white, 80%);
-  outline: none;
-  background-color: transparent;
-  color: black;
+  margin:10px;
+  font-family: Arial;
+  font-size: 20px;
+  color: grey;
   border-bottom: 1px solid black;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
 }
-
+/* 
 
 nav-link:active{
   background-color: green;
-}
+} */
 
 
 
