@@ -26,21 +26,16 @@ function Menubase(props) {
             Event Staff
           </a>
           <ul className="navbar-nav ml-auto">
-            <Link to='/about'>
+
             <li className={selectButton === "about"? selecteButton: notSelectedButton }>
-              <a className="nav-link js-scroll-trigger" href="#about" id="about" onClick={e => itemSelected(e.target.id)}>About</a>
+              <Link to='/about' className="nav-link js-scroll-trigger" href="#about" id="about" onClick={e => itemSelected(e.target.id)}>About</Link>
             </li>
-            </Link>
-            <Link to='contact'>
             <li className={selectButton === "projects"? selecteButton: notSelectedButton }>
-              <a className="nav-link js-scroll-trigger" id="projects" href="#projects" onClick={e => itemSelected(e.target.id)}>Projects</a>
+              <Link to='contact' className="nav-link js-scroll-trigger" id="projects" href="#projects" onClick={e => itemSelected(e.target.id)}>Projects</Link>
             </li>
-            </Link>
-            <Link to='login'>
             <li className={selectButton === "login"? selecteButton: notSelectedButton }>
-              <a className="nav-link js-scroll-trigger" id="login" href="#signup" onClick={e => itemSelected(e.target.id)}>Login</a>
+              <Link to='login' className="nav-link js-scroll-trigger" id="login" href="#signup" onClick={e => itemSelected(e.target.id)}>Login</Link>
             </li>
-            </Link>
           </ul>
         </div>
       </nav>
