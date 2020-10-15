@@ -12,20 +12,7 @@ function Footerbase(props) {
     <React.Fragment>
       <div className={styles.footer}>
         <container>
-          <Row>
-            <Col className={styles.boxed}>
-              <Row><FontAwesomeIcon icon={faMap} size=".3x" className={styles.iconCenterCommon} /></Row>
-              <Row><div className={styles.iconCenterCommon}>72 Patrician Villas Blackrock</div></Row>
-            </Col>
-            <Col className={styles.boxed}>
-              <Row><FontAwesomeIcon icon={faMap} size=".3x" className={styles.iconCenterCommon} /></Row>
-              <Row><div className={styles.iconCenterCommon}>72 Patrician Villas Blackrock</div></Row>
-            </Col>
-            <Col className={styles.boxed}>
-              <Row><FontAwesomeIcon icon={faMap} size=".3x" className={styles.iconCenterCommon} /></Row>
-              <Row><div className={styles.iconCenterCommon}>72 Patrician Villas Blackrock</div></Row>
-            </Col>
-          </Row>
+  
           <Row>
             <Col />
             <Col />
