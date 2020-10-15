@@ -1,10 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Menubar.css";
 import "../../../CSS/bootstrap.min.css";
+import {Link} from "react-router-dom";
 
 
 
 function Menubase(props) {
+
+  const[selectButton,setSelectButton] = useState("nav-item");
+  const selecteButton = "nav-item-selected"
+  const notSelectedButton = "nav-item"
+
+  function itemSelected(button){
+    setSelectButton(button);
+  }
+
   return (
     <React.Fragment>
       <nav
@@ -14,22 +24,17 @@ function Menubase(props) {
         <div className="container-fluid">
           <a className="navbar-brand" href="#page-top">
             Event Staff
-        </a>
+          </a>
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#about">
-                About
-            </a>
+
+            <li className={selectButton === "about"? selecteButton: notSelectedButton }>
+              <Link to='/about' className="nav-link js-scroll-trigger" href="#about" id="about" onClick={e => itemSelected(e.target.id)}>About</Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#projects">
-                Projects
-            </a>
+            <li className={selectButton === "projects"? selecteButton: notSelectedButton }>
+              <Link to='contact' className="nav-link js-scroll-trigger" id="projects" href="#projects" onClick={e => itemSelected(e.target.id)}>Projects</Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#signup">
-                Contact
-            </a>
+            <li className={selectButton === "login"? selecteButton: notSelectedButton }>
+              <Link to='login' className="nav-link js-scroll-trigger" id="login" href="#signup" onClick={e => itemSelected(e.target.id)}>Login</Link>
             </li>
           </ul>
         </div>

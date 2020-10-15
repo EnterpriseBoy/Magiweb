@@ -5,7 +5,7 @@ import Menubase from './menubar/Menubar';
 
 function Header() {
   return (
-    <div className={styles.header}>
+    <div className={styles.MenuBarheader}>
       <Menubase/>
     </div>
   );

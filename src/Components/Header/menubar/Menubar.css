@@ -18,8 +18,12 @@
   padding-bottom: 5px;
 }
 
+Link Link:hover{
+  text-decoration: none;
+}
 
-#mainNav .navbar-nav .nav-item:hover{
+
+.nav-item:hover{
   margin-bottom: 9px;
   color: fade(white, 80%);
   outline: none;
@@ -29,9 +33,13 @@
   padding-bottom: 5px;
 }
 
-
-nav-link:active{
-  background-color: green;
+.nav-item-selected{
+  margin:10px;
+  font-family: Arial;
+  font-size: 20px;
+  color: grey;
+  border-bottom: 1px solid black;
+  padding-bottom: 4px;
 }
 
 
