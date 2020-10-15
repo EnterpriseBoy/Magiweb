@@ -1,10 +1,12 @@
 import React from 'react';
+import LoginModal from '../../Modals/loginModal';
+import loginModal from "../../Modals/loginModal"
 
 
 function Login() {
   return (
     <div className="App">
-      <h1>Login</h1>
+      <LoginModal/>
     </div>  
   );
 }

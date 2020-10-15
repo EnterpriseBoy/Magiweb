@@ -1,5 +1,6 @@
-import React, {useState} from "react";
+import React, {useState,useEffect} from "react";
 import "./Menubar.css";
+import loginModal from "../../Modals/loginModal"
 import "../../../CSS/bootstrap.min.css";
 import {Link} from "react-router-dom";
 
@@ -11,8 +12,12 @@ function Menubase(props) {
   const selecteButton = "nav-item-selected"
   const notSelectedButton = "nav-item"
 
+
   function itemSelected(button){
     setSelectButton(button);
+    if(button==="login"){
+      alert("login selected");
+    }
   }
 
   return (
@@ -39,6 +44,7 @@ function Menubase(props) {
           </ul>
         </div>
       </nav>
+      <loginModal/>
     </React.Fragment>
   );
 }
