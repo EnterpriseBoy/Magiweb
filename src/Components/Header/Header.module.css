@@ -1,5 +1,4 @@
 .header{
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../../assets/Background.jpg);
     padding-top: 20px;
     box-shadow: 0 0 8px 8px white inset;
   }
