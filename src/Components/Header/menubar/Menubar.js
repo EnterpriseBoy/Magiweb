@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import "./Menubar.css";
 import LoginModal from "../../Modals/LoginModal";
 import "../../../CSS/bootstrap.min.css";
 import {Link} from "react-router-dom";

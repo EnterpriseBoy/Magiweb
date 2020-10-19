@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.footer{
+  position: absolute; 
+  bottom:0%;
+  width:100%; 
+}
+
+.body{
+  position: relative; 
+  width:100%; 
+}
+
+.header{
+  top: 0%;
+  position: relative; 
+  width:100%; 
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* LOGIN MODAL CSS*/
+
+.flex-grid {
+  display: flex;
+}
+.colOne {
+  vertical-align: middle;
+  flex: 0 0 100px;
+}
+.colTwo {
+  flex: 1;
+  align-items: right;
+  justify-content: right;
+}
+
+/* LOGIN MODAL END*/
+
+/* Menu Bar CSS Start*/
+
+#mainNav {
+  min-height: 70px;
+}
+
+.nav-item {
+  margin:10px;
+  font-family: Arial;
+  font-size: 20px;
+  color: grey;
+  padding-bottom: 5px;
+}
+
+.navbar-brand{
+  margin:10px;
+  font-family: Arial;
+  font-size: 20px;
+  color: grey;
+  padding-bottom: 5px;
+}
+
+Link Link:hover{
+  text-decoration: none;
+}
+
+
+.nav-item:hover{
+  margin-bottom: 9px;
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+  color: black;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.nav-item-selected{
+  margin:10px;
+  font-family: Arial;
+  font-size: 20px;
+  color: grey;
+  border-bottom: 1px solid black;
+  padding-bottom: 4px;
+}
+
+/* Menu Bar CSS End*/
+
+.login_lable{
+  font-family: Arial;
+  font-size: 20px;
+  align-content: right;
+}
+
+
+
