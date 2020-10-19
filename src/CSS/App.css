@@ -59,16 +59,19 @@
 
 .flex-grid {
   display: flex;
+  margin-top: 20px;
 }
 .colOne {
   vertical-align: middle;
   flex: 0 0 100px;
+  margin-bottom: 10px;
 }
 .colTwo {
-  flex: 1;
-  align-items: right;
-  justify-content: right;
+  flex: 0;
+  align-items: flex-start;
+  margin-bottom: 10px;
 }
+
 
 /* LOGIN MODAL END*/
 
@@ -121,9 +124,8 @@ Link Link:hover{
 /* Menu Bar CSS End*/
 
 .login_lable{
-  font-family: Arial;
-  font-size: 20px;
-  align-content: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 
