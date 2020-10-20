@@ -1,42 +1,43 @@
-import React from "react";
-import { MDBContainer,MDBModalHeader,MDBInput,MDBModalFooter, MDBBtn, MDBModal } from 'mdbreact';
+import React, { useState } from "react";
+import { MDBContainer,MDBModalFooter, MDBBtn, MDBModal } from 'mdbreact';
 import SliderSwitch from "../Helpers/SlliderSwitch/SliderSwitch";
 
-import { faUser,faKey,faSignature } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 const LoginModal = (props) => {
+  const [isChecked,setIsChecked] = useState(false);
+  
+  function onChange(arg){
+    
+    if(isChecked){
+      document.getElementById("name").style.height="none";
+      document.getElementById("repeatPassword").style.display="none";
+      setIsChecked(false);
+    }else{
+      document.getElementById("name").style.display="block";
+      document.getElementById("repeatPassword").style.display="block";
+      setIsChecked(true);
+    }
+  }
+
 return (
    <MDBContainer>
         <MDBModal isOpen={props.show} centered>
             <div class="flex-grid">
               <div class="col login_lable">Login</div>
-              <div class="col"><SliderSwitch onChange={() => alert("has changed")}/></div>
+              <div class="col"><SliderSwitch onChange={() => onChange } isChecked={isChecked}/></div>
               <div class="col login_lable">Register</div>
             </div>
-            <div class="flex-grid">
-              <div class="colOne login_lable">
-                <FontAwesomeIcon icon={faUser} size="1x" />
-              </div>
+            <div></div>
+            <div class="flex-grid" id="name">
               <input type="text" className="form-control login_lable" placeholder="Name" aria-label="Name" aria-describedby="basic-addon" />
             </div>
             <div class="flex-grid">
-              <div class="colOne login_lable">
-                <FontAwesomeIcon icon={faSignature} size="1x" />
-              </div>
               <input type="text" className="form-control login_lable" placeholder="Username" aria-label="Username" aria-describedby="basic-addon" />
             </div>
             <div class="flex-grid">
-              <div class="colOne login_lable">
-                <FontAwesomeIcon icon={faKey} size="1x" />
-              </div>
               <input type="text" className="form-control login_lable" placeholder="Password" aria-label="Password" aria-describedby="basic-addon" />
             </div>
-            <div class="flex-grid">
-              <div class="colOne login_lable">
-                <FontAwesomeIcon icon={faKey} size="1x" />
-              </div>
-              <input type="text" className="form-control login_lable" placeholder="Repeat Password" aria-label="Repeat Password" aria-describedby="basic-addon" />
+            <div class="flex-grid" id="repeatPassword">
+              <input type="text" className="form-control login_lable" placeholder="Repeat Password"  aria-label="Repeat Password" aria-describedby="basic-addon" />
             </div>
           <MDBModalFooter>
             <MDBBtn color="secondary" >Close</MDBBtn>

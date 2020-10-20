@@ -64,12 +64,21 @@
 .colOne {
   vertical-align: middle;
   flex: 0 0 100px;
-  margin-bottom: 10px;
 }
 .colTwo {
   flex: 0;
   align-items: flex-start;
-  margin-bottom: 10px;
+}
+
+#name, #repeatPassword{
+  visibility: visible;
+  height:0;
+}
+
+.hide_mouse_over{
+  visibility:hidden;
+  opacity:0;
+  transition:visibility 0.3s linear,opacity 0.3s linear;
 }
 
 
@@ -125,7 +134,7 @@ Link Link:hover{
 
 .login_lable{
   margin-right: 10px;
-  margin-bottom: 10px;
+  
 }
 
 

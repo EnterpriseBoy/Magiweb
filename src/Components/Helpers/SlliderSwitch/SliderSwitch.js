@@ -1,14 +1,20 @@
 import React from 'react';
-import styles from "./SliderSwitch.module.css";
 
 
 function SliderSwitch(props) {
   return (
     <div>
-        <label className={styles.switch}>
-            <input type="checkbox" onChange={props.onChange}/>
-            <div className={styles.slider}></div>
-        </label>
+      <div className='custom-control custom-switch'>
+        <input
+          type='checkbox'
+          className='custom-control-input'
+          checked={props.isChecked}
+          id='customSwitches'
+          onChange={props.onChange(1)}
+          readOnly
+        />
+        <label className='custom-control-label' htmlFor='customSwitches'/>
+      </div>
     </div>
   );
 }
