@@ -11,7 +11,6 @@ function Footerbase(props) {
   return (
     <React.Fragment>
       <div className={styles.footer}>
-        <container>
   
           <Row>
             <Col />
@@ -28,7 +27,6 @@ function Footerbase(props) {
             <Col />
             <Col />
           </Row>
-        </container>
       </div>
     </React.Fragment>
   );

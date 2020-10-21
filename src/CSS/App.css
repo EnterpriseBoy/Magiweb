@@ -59,26 +59,12 @@
 
 .flex-grid {
   display: flex;
-  margin-top: 20px;
-}
-.colOne {
-  vertical-align: middle;
-  flex: 0 0 100px;
-}
-.colTwo {
-  flex: 0;
-  align-items: flex-start;
+  margin: 20px;
 }
 
 #name, #repeatPassword{
-  visibility: visible;
-  height:0;
-}
-
-.hide_mouse_over{
-  visibility:hidden;
-  opacity:0;
-  transition:visibility 0.3s linear,opacity 0.3s linear;
+  display: none;
+  height:auto;
 }
 
 

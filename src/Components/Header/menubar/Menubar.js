@@ -20,7 +20,7 @@ function Menubase(props) {
     }
   }
 
-  const handleClose = () => setShowModal(false);
+  const handleClose = () => {setShowModal(false)};
 
   return (
     <React.Fragment>
