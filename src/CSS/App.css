@@ -59,14 +59,8 @@
 
 .flex-grid {
   display: flex;
-  margin: 20px;
+  margin: 10px;
 }
-
-#name, #repeatPassword{
-  display: none;
-  height:auto;
-}
-
 
 /* LOGIN MODAL END*/
 
