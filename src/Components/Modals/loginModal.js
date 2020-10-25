@@ -1,73 +1,68 @@
-import React, { useState,useRef } from "react";
+import React, { useState } from "react";
 import AnimateHeight from 'react-animate-height'
-import { MDBContainer,MDBModalFooter, MDBBtn, MDBModal } from 'mdbreact';
+import { MDBContainer,MDBModalFooter, MDBBtn, MDBModal} from 'mdbreact';
 import axios from 'axios';
 import SliderSwitch from "../Helpers/SlliderSwitch/SliderSwitch";
 
 const LoginModal = (props) => {
-  const [isChecked,setIsChecked] = useState(false);
+  const [isChecked,setIsChecked] = useState();
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
-  const [height,setHeight]= useState("0");
-
-  const nameDiv = useRef(null);
-  const repeatPwd = useRef(null);
+  const [height,setHeight]= useState("0%");
+  const [errorResponse,setErrorResponse]=useState([])
 
   function onChange(arg){
     if(isChecked){
-      setHeight("0");
+      setHeight("0%");
       setIsChecked(false);
     }else{
-      setHeight("auto");
+      setHeight("30px");
       setIsChecked(true);
     }
   }
 
   function handleSubmit(){
-    setHeight("äuto");
     axios.post('http://localhost:3000/api/user/login',{
         email: email,
         password: password
-      }).then(function (response) {
-        alert(JSON.stringify(response));
+      }).then((response) => {
         props.handleClose();
       })
       .catch(function (error) {
-        console.log(error);
+        setErrorResponse(error.response.data);
+        //alert(error.response.data[1]);
       });
   }
 
+  function handleClose(){
+    setErrorResponse([]);
+    props.handleClose();
+  }
+
 return (
-   <MDBContainer>
         <MDBModal isOpen={props.show} centered>
+             <MDBContainer>
             <div className="flex-grid">
               <div className="col login_lable">Login</div>
               <div className="col"><SliderSwitch onChange={() => onChange } isChecked={isChecked}/></div>
               <div className="col login_lable">Register</div>
             </div>
             <AnimateHeight duration={ 500 } height={height}>
-              <div className="flex-grid" ref={nameDiv}  >
                 <input type="text" className="form-control login_lable" placeholder="Name" aria-label="Name" aria-describedby="basic-addon" />
-              </div>
             </AnimateHeight>
-            <div className="flex-grid">
               <input type="text" onChange={(e) => setEmail(e.target.value)} className="form-control login_lable" placeholder="Username" aria-label="Username" aria-describedby="basic-addon" />
-            </div>
-            <div className="flex-grid">
               <input type="text" onChange={(e) => setPassword(e.target.value)} className="form-control login_lable" placeholder="Password" aria-label="Password" aria-describedby="basic-addon" />
-            </div>
             <AnimateHeight duration={ 500 } height={height}>
-              <div className="flex-grid" ref={repeatPwd}>
                 <input type="text" className="form-control login_lable" placeholder="Repeat Password"  aria-label="Repeat Password" aria-describedby="basic-addon" />
-              </div>
             </AnimateHeight>
+            <div>{errorResponse.map(function(error){return <div className="error">{error}</div>})}</div>
           <MDBModalFooter>
-          <MDBBtn color="outline primary" onClick={handleSubmit}>Submit</MDBBtn>
-          <MDBBtn color="outline secondary" onClick={props.handleClose} >Cancle</MDBBtn>
+          <MDBBtn outline color="secondary"onClick={handleSubmit}>Submit</MDBBtn>
+          <MDBBtn outline color="secondary" onClick={handleClose} >Cancle</MDBBtn>
           </MDBModalFooter>
+          </MDBContainer>
         </MDBModal>
-      </MDBContainer>
-);
+        );
 };
 
 export default LoginModal;
