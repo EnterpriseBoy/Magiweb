@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import LoginModal from "../../Modals/LoginModal";
+import LoginModal from "../../Modals/loginModal";
 import "../../../CSS/bootstrap.min.css";
 import {Link} from "react-router-dom";
 
