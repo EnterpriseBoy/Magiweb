@@ -15,11 +15,11 @@ const LoginModal = (props) => {
 
   function onChange(arg){
     if(isLogin){
-      setUrl('http://localhost:3000/api/user/login');
+      setUrl(process.env.REACT_APP_LOGIN);
       setHeight("0%");
       setIsLogin(false);
     }else{
-      setUrl('http://localhost:3000/api/user/register');
+      setUrl(process.env.REACT_APP_REGISTER);
       setHeight("30px");
       setIsLogin(true);
     }
