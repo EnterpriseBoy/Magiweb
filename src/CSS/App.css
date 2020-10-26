@@ -120,6 +120,8 @@ Link Link:hover{
 .error{
   color: red;
   justify-content: left;
+  text-transform:capitalize;
+  text-align: left;
 }
 
 
