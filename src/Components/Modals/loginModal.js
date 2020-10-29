@@ -23,19 +23,18 @@ const LoginModal = (props) => {
       setHeight("30px");
       setIsLogin(true);
     }
+    setErrorResponse([])
   }
 
   function handleSubmit(){
-    axios.post(url,{
+    axios.post(process.env.REACT_APP_LOGIN,{
         email: email,
         password: password
       }).then((response) => {
         props.handleClose();
       })
       .catch(function (error) {
-        let errorArray = [];  
-        errorArray.push(error.response.data);
-        setErrorResponse(errorArray);
+        setErrorResponse(error.response.data);
       });
   }
 
@@ -64,8 +63,8 @@ return (
             <div>{errorResponse?.map(function(error){return <li className="error">{error}</li>})}</div>
             <div>Forgot Password</div>
           <MDBModalFooter>
-          <MDBBtn outline color="secondary"onClick={handleSubmit}>Submit</MDBBtn>
-          <MDBBtn outline color="secondary" onClick={handleClose} >Cancle</MDBBtn>
+          <MDBBtn outline color="outline-secondary"onClick={handleSubmit}>Submit</MDBBtn>
+          <MDBBtn outline color="outline-secondary" onClick={handleClose} >Cancle</MDBBtn>
           </MDBModalFooter>
           </MDBContainer>
         </MDBModal>

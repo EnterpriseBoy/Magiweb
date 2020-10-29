@@ -32,7 +32,7 @@ function Footerbase(props) {
               <FontAwesomeIcon icon={faFacebook} size="2x" className={styles.iconRight} />
             </Col>
             <Col>
-              <FontAwesomeIcon icon={faTwitter} size="2x" className={styles.iconCenter} />
+              <FontAwesomeIcon icon={faTwitter} size="2x" className={styles.iconCenter} />{process.env.REACT_APP_LOGIN}
             </Col>
             <Col>
               <FontAwesomeIcon icon={faInstagram} size="2x" className={styles.iconLeft} />
