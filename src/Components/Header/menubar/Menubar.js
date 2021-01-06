@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import LoginModal from "../../Modals/loginModal";
+import logo from "../../../assets/EventStaffLogo.png"
 import "../../../CSS/bootstrap.min.css";
 import {Link} from "react-router-dom";
 
@@ -26,7 +27,7 @@ function Menubase(props) {
     <React.Fragment>
       <nav className="navbar navbar-expand-lg navbar-light" id="mainNav">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#page-top">Event Staff</a>
+          <img src={logo} alt="Logo" className="logo" />
           <ul className="navbar-nav ml-auto">
           <li className={selectButton === "home"? selecteButton: notSelectedButton }>
               <Link to='/' className="nav-link js-scroll-trigger" id="home" onClick={e => itemSelected(e.target.id)}>Home</Link>
