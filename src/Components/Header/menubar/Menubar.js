@@ -28,11 +28,14 @@ function Menubase(props) {
         <div className="container-fluid">
           <a className="navbar-brand" href="#page-top">Event Staff</a>
           <ul className="navbar-nav ml-auto">
+          <li className={selectButton === "home"? selecteButton: notSelectedButton }>
+              <Link to='/' className="nav-link js-scroll-trigger" id="home" onClick={e => itemSelected(e.target.id)}>Home</Link>
+            </li>
             <li className={selectButton === "about"? selecteButton: notSelectedButton }>
               <Link to='/about' className="nav-link js-scroll-trigger" id="about" onClick={e => itemSelected(e.target.id)}>About</Link>
             </li>
-            <li className={selectButton === "projects"? selecteButton: notSelectedButton }>
-              <Link to='contact' className="nav-link js-scroll-trigger" id="projects" onClick={e => itemSelected(e.target.id)}>Projects</Link>
+            <li className={selectButton === "Contact"? selecteButton: notSelectedButton }>
+              <Link to='contact' className="nav-link js-scroll-trigger" id="contact" onClick={e => itemSelected(e.target.id)}>Contact</Link>
             </li>
             <li className={selectButton === "login"? selecteButton: notSelectedButton }>
               <div to='login' className="nav-link js-scroll-trigger" id="login"  onClick={e => itemSelected(e.target.id)}>Login</div>

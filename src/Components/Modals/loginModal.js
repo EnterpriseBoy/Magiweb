@@ -9,8 +9,8 @@ const LoginModal = (props) => {
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
   const [height,setHeight]= useState("0%");
-  const [errorResponse,setErrorResponse]=useState([])
-  const [url,setUrl]= useState("")
+  const [errorResponse,setErrorResponse]=useState([]);
+  const [url,setUrl]= useState(process.env.REACT_APP_LOGIN);
 
 
   function onChange(arg){
@@ -27,10 +27,13 @@ const LoginModal = (props) => {
   }
 
   function handleSubmit(){
-    axios.post(process.env.REACT_APP_LOGIN,{
+    axios.post(url,{
         email: email,
         password: password
       }).then((response) => {
+        setErrorResponse([]);
+        setEmail("");
+        setPassword("");
         props.handleClose();
       })
       .catch(function (error) {
@@ -39,8 +42,8 @@ const LoginModal = (props) => {
   }
 
   function handleClose(){
-    setErrorResponse([]);
     setIsLogin(false);
+    setErrorResponse([]);
     props.handleClose();
   }
 

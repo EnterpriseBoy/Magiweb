@@ -2,8 +2,8 @@ import React from 'react';
 import './CSS/App.css';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/footer';
-import Body from './Components/Body/Body';
 import About from './Components/Pages/About/About';
+import Home from './Components/Pages/Home/Home'
 import Contact from './Components/Pages/Contact/contact';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Login from './Components/Pages/Login/Login';
@@ -20,6 +20,7 @@ function App() {
               <Route path="/About" component={About} />
               <Route path="/Contact" component={Contact} />
               <Route path="/Login" component={Login} />
+              <Route exact path="/" component={Home} />
             </Switch>
           </div>
           <div className="footer">
