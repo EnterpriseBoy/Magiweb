@@ -17,11 +17,11 @@ function Footerbase(props) {
               <Row><div className={styles.iconCenterCommon}>info</div></Row>
             </Col>
             <Col className={styles.boxed}>
-  <Row><FontAwesomeIcon icon={faMap}  className={styles.iconCenterCommon} />{process.env.REACT_APP_ENVIORMENT}</Row>
+  <Row><FontAwesomeIcon icon={faMap}  className={styles.iconCenterCommon} /></Row>
               <Row><div className={styles.iconCenterCommon}>info</div></Row>
             </Col>
             <Col className={styles.boxed}>
-              <Row><FontAwesomeIcon icon={faMap} className={styles.iconCenterCommon} />{process.env.REACT_APP_LOGIN}</Row>
+              <Row><FontAwesomeIcon icon={faMap} className={styles.iconCenterCommon} /></Row>
               <Row><div className={styles.iconCenterCommon}>info</div></Row>
             </Col>
           </Row>
