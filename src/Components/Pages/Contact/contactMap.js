@@ -9,10 +9,12 @@ function ContacatMap() {
           <MDBRow>
               <MDBCol md="12">
                   <img className="contactMap" src={Map} alt="Map" />
-                  <div className="contactMapText">Event Services</div>
-                  <div className="contactMapText">Portland Place</div>
-                  <div className="contactMapText"> London</div>
-                  <div className="contactMapText">W1A 1AA</div>
+                  <div className="contactMapAdress">
+                    <div className="contactMapText">Event Services,</div>
+                    <div className="contactMapText">Portland Place,</div>
+                    <div className="contactMapText"> London,</div>
+                    <div className="contactMapText">W1A 1AA</div>
+                  </div>
               </MDBCol>
           </MDBRow>
       </MDBContainer>
