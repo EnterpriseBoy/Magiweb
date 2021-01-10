@@ -3,7 +3,7 @@ import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn,MDBIcon } from 'mdbreact
 
 function ContactForm() {
   return (
-    <div className="contactFormDetails">
+    <div className="contactForm">
       <MDBContainer>
           <MDBRow>
               <MDBCol md="12">
