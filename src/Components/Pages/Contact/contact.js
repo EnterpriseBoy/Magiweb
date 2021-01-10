@@ -8,6 +8,7 @@ function Contact() {
   return (
     <div className="App">
       <div className="flex-container">
+      Contact us
         <div className="contactPage">
           <ContactForm/>
           <ContactMap/>
