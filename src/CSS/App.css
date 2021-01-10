@@ -161,6 +161,10 @@ Link Link:hover{
   border-color: black;
   border-style: solid;
 }
+
+input.form-control.validate.ContactInput{
+  margin-bottom: 0px;
+}
 /* Contact Page End*/
 
 
