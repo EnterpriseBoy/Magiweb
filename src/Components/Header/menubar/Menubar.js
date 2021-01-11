@@ -15,9 +15,11 @@ function Menubase(props) {
 
 
   function itemSelected(button){
-    setSelectButton(button);
+
     if(button === "login"){
       setShowModal(true);
+    }else{
+      setSelectButton(button);
     }
   }
 
@@ -25,25 +27,27 @@ function Menubase(props) {
 
   return (
     <React.Fragment>
-      <nav className="navbar navbar-expand-lg navbar-light" id="mainNav">
-        <div className="container-fluid">
-          <img src={logo} alt="Logo" className="logo" />
-          <ul className="navbar-nav ml-auto">
-          <li className={selectButton === "home"? selecteButton: notSelectedButton }>
-              <Link to='/' className="nav-link js-scroll-trigger" id="home" onClick={e => itemSelected(e.target.id)}>Home</Link>
-            </li>
-            <li className={selectButton === "about"? selecteButton: notSelectedButton }>
-              <Link to='/about' className="nav-link js-scroll-trigger" id="about" onClick={e => itemSelected(e.target.id)}>About</Link>
-            </li>
-            <li className={selectButton === "Contact"? selecteButton: notSelectedButton }>
-              <Link to='contact' className="nav-link js-scroll-trigger" id="contact" onClick={e => itemSelected(e.target.id)}>Contact</Link>
-            </li>
-            <li className={selectButton === "login"? selecteButton: notSelectedButton }>
-              <div to='login' className="nav-link js-scroll-trigger" id="login"  onClick={e => itemSelected(e.target.id)}>Login</div>
-            </li>
-          </ul>
+      <div className="navdiv">
+        <div className="logodiv-container">
+          <img src={logo} className="logo"/>
         </div>
-      </nav>
+        <nav className="navbar-expand-lg navbar-light navdiv-container">
+            <ul className="navbar-nav">
+              <li className={selectButton === "home"? selecteButton: notSelectedButton }>
+                <Link to='/' className="nav-link js-scroll-trigger" id="home" onClick={e => itemSelected(e.target.id)}>Home</Link>
+              </li>
+              <li className={selectButton === "events"? selecteButton: notSelectedButton }>
+                <Link to='/events' className="nav-link js-scroll-trigger" id="events" onClick={e => itemSelected(e.target.id)}>Events</Link>
+              </li>
+              <li className={selectButton === "contact"? selecteButton: notSelectedButton }>
+                <Link to='contact' className="nav-link js-scroll-trigger" id="contact" onClick={e => itemSelected(e.target.id)}>Contact</Link>
+              </li>
+              <li className={selectButton === "login"? selecteButton: notSelectedButton }>
+                <div to='login' className="nav-link js-scroll-trigger" id="login"  onClick={e => itemSelected(e.target.id)}>Login</div>
+              </li>
+            </ul>
+        </nav>
+      </div>
       <LoginModal show={showModal} handleClose={handleClose}/>
     </React.Fragment>
   );

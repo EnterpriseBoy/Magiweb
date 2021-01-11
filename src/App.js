@@ -2,7 +2,7 @@ import React from 'react';
 import './CSS/App.css';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/footer';
-import About from './Components/Pages/About/About';
+import Events from './Components/Pages/Events/Events';
 import Home from './Components/Pages/Home/Home'
 import Contact from './Components/Pages/Contact/contact';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -17,7 +17,7 @@ function App() {
           </div>
           <div className="body">
             <Switch>
-              <Route path="/About" component={About} />
+              <Route path="/Events" component={Events} />
               <Route path="/Contact" component={Contact} />
               <Route path="/Login" component={Login} />
               <Route exact path="/" component={Home} />

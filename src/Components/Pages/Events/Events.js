@@ -1,12 +1,12 @@
 import React from 'react';
 
-function About() {
+function Events() {
   return (
     <div>
-        <h1>About</h1>
+        <h1>Events</h1>
     </div>
   
   );
 }
 
-export default About;
+export default Events;
