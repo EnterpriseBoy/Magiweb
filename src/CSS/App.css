@@ -125,6 +125,26 @@ Link Link:hover{
 
 /* Navbar End*/
 
+/*Home Page Start*/
+
+.homePage{
+  height: 400px;
+}
+
+/*Home Page End*/
+
+/* Events Page Start*/
+.eventMapDiv{
+  height:150px;
+}
+.eventMap{
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain; 
+}
+
+/* Events Page End*/
+
 /* Contact Page Start*/
 .flex-container{
   display: flex;
@@ -142,15 +162,6 @@ Link Link:hover{
   margin-left: 2%;
   height: 100%;
 }
-.eventMapDiv{
-  height:150px;
-}
-.eventMap{
-  width: 100%; 
-  height: 100%; 
-  object-fit: contain; 
-}
-
 .contactMap{
   float: left;
   margin-top: 6%;
