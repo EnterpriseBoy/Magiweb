@@ -134,13 +134,17 @@ Link Link:hover{
 /*Home Page End*/
 
 /* Events Page Start*/
-.eventMapDiv{
-  height:150px;
-}
+
 .eventMap{
-  width: 100%; 
+  margin-left: 1%;
+  width: 98%; 
   height: 100%; 
   object-fit: contain; 
+}
+
+.eventList{
+  width: 98%;
+  margin-left: 1%;
 }
 
 /* Events Page End*/

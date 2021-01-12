@@ -503,7 +503,9 @@ function EventList() {
         ]
       };
       return (
-        <MDBDataTable striped bordered small data={data} entries={5} entriesOptions={[5, 20, 25]}/>
+        <div className="eventList">
+          <MDBDataTable striped bordered small data={data} entries={5} entriesOptions={[5, 20, 25]}/>
+        </div>
   );
 }
 
