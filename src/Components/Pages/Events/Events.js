@@ -1,11 +1,14 @@
 import React from 'react';
+import EventList from './EventList'
+
+
 
 function Events() {
   return (
     <div>
-        <h1>Events</h1>
-    </div>
-  
+      EventsMap
+      <EventList/>
+    </div>  
   );
 }
 
