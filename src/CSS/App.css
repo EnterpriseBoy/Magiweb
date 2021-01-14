@@ -143,8 +143,13 @@ Link Link:hover{
 }
 
 .eventList{
-  width: 98%;
-  margin-left: 1%;
+  margin-left: 10px;
+}
+
+.eventsFlexContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
 /* Events Page End*/
@@ -157,7 +162,6 @@ Link Link:hover{
 
 .contactPage{
   flex-grow : 1; 
-  height: 430px;
 }
 
 .contactForm,.contactDetails{

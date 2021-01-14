@@ -1,14 +1,14 @@
 import React from 'react';
 import EventList from './EventList'
-import EventMap from './EventMap'
+import EventDetails from './EventDetails'
 
 
 
 function Events() {
   return (
-    <div>
+    <div className="eventsFlexContainer">
       EventsMap
-      <EventMap/>
+      <EventDetails/>
       <EventList/>
     </div>  
   );

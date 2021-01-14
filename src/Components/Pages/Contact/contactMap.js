@@ -1,6 +1,6 @@
 import React from 'react';
 import Map from '../../../assets/Citymap.jpg';
-import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn,MDBIcon } from 'mdbreact';
+import { MDBContainer, MDBRow, MDBCol} from 'mdbreact';
 
 function ContacatMap() {
   return (
