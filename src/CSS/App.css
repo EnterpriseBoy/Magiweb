@@ -135,6 +135,9 @@ Link Link:hover{
 
 /* Events Page Start*/
 
+div.container.noMargin{
+  margin: 0px;
+}
 .eventMap{
   margin-left: 1%;
   width: 98%; 
@@ -142,14 +145,18 @@ Link Link:hover{
   object-fit: contain; 
 }
 
-.eventList{
-  margin-left: 10px;
+.eventsPage{
+  flex-grow : 1; 
 }
 
-.eventsFlexContainer{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+.eventList,.eventDetails{
+  float: left;
+  width:48%;
+  margin-left: 2%;
+  height: 100%;
+}
+ul.nav.nav-tabs{
+  margin-top:0!important;
 }
 
 /* Events Page End*/

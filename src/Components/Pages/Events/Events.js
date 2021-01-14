@@ -6,11 +6,15 @@ import EventDetails from './EventDetails'
 
 function Events() {
   return (
-    <div className="eventsFlexContainer">
-      EventsMap
-      <EventDetails/>
-      <EventList/>
-    </div>  
+    <div className="App">
+      <div className="flex-container">
+        EventsMap
+        <div className="eventsPage">
+        <EventList/>
+        <EventDetails/>
+      </div>
+    </div>
+  </div>  
   );
 }
 
