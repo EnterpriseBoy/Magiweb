@@ -9,7 +9,7 @@ function EventDetails(){
     return(
     <dir className ="eventDetails">
         <MDBContainer>
-        <MDBNav className="nav-tabs">
+        <MDBNav className="nav nav-tabs">
           <MDBNavItem>
             <MDBNavLink link to="#" active={activeTab === "1"} onClick={() => setActiveTab("1")} role="tab" >
               Home

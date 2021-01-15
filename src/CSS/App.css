@@ -159,6 +159,11 @@ ul.nav.nav-tabs{
   margin-top:0!important;
 }
 
+.eventLinkButton{
+  width:40px;
+  height: 40px;
+}
+
 /* Events Page End*/
 
 /* Contact Page Start*/

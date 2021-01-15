@@ -1,6 +1,6 @@
 import React from 'react';
 import EventList from './EventList'
-import EventDetails from './EventDetails'
+import EventDetailsNew from './EventDetailsNew'
 
 
 
@@ -8,10 +8,9 @@ function Events() {
   return (
     <div className="App">
       <div className="flex-container">
-        EventsMap
         <div className="eventsPage">
         <EventList/>
-        <EventDetails/>
+        <EventDetailsNew/>
       </div>
     </div>
   </div>  
