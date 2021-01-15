@@ -1,6 +1,6 @@
 import React from 'react';
 import EventList from './EventList'
-import EventDetailsNew from './EventDetailsNew'
+import EventDetails from './EventDetails'
 
 
 
@@ -10,7 +10,7 @@ function Events() {
       <div className="flex-container">
         <div className="eventsPage">
         <EventList/>
-        <EventDetailsNew/>
+        <EventDetails/>
       </div>
     </div>
   </div>  

@@ -1,5 +1,8 @@
-import React, {useState,useEffect} from 'react';
-import { MDBContainer, MDBTabPane, MDBTabContent, MDBNav, MDBNavItem, MDBNavLink } from "mdbreact";
+import React, {useState} from 'react';
+import DetailsIcon from '../../../assets/details_icon.png'
+import MapIcon from '../../../assets/map_icon.png'
+import StaffIcon from '../../../assets/staff_icon.png'
+import { MDBContainer, MDBTabPane, MDBTabContent, MDBNav, MDBNavItem, MDBNavLink,MDBRow,MDBCol,MDBBtn } from "mdbreact";
 
 
 function EventDetails(){
@@ -9,41 +12,29 @@ function EventDetails(){
     return(
     <dir className ="eventDetails">
         <MDBContainer>
-        <MDBNav className="nav nav-tabs">
-          <MDBNavItem>
-            <MDBNavLink link to="#" active={activeTab === "1"} onClick={() => setActiveTab("1")} role="tab" >
-              Home
-            </MDBNavLink>
-          </MDBNavItem>
-          <MDBNavItem>
-            <MDBNavLink link to="#" active={activeTab=== "2"} onClick={() => setActiveTab("2")} role="tab" >
-              Profile
-            </MDBNavLink>
-          </MDBNavItem>
-          <MDBNavItem>
-            <MDBNavLink link to="#" active={activeTab === "3"} onClick={() => setActiveTab("3")} role="tab" >
-              Profile
-            </MDBNavLink>
-          </MDBNavItem>
-        </MDBNav>
-        <MDBTabContent activeItem={activeTab} >
-          <MDBTabPane tabId="1" role="tabpanel">
-            <p className="mt-2">
-              This is tab 1
-            </p>
-          </MDBTabPane>
-          <MDBTabPane tabId="2" role="tabpanel">
-            <p className="mt-2">
-              This is tab 2
-            </p>
-          </MDBTabPane>
-          <MDBTabPane tabId="3" role="tabpanel">
-            <p className="mt-2">
-              This is tab 3
-            </p>
-          </MDBTabPane>
-        </MDBTabContent>
-      </MDBContainer>
+            <MDBNav className=" nav-justified" color="info" >
+            <MDBNavItem>
+                <img className="eventLinkButton" src={DetailsIcon} onClick={() => setActiveTab("1")} alt="details"/>
+            </MDBNavItem>
+            <MDBNavItem>
+                <img className="eventLinkButton" src={StaffIcon} onClick={() => setActiveTab("2")} alt="details"/>
+            </MDBNavItem>
+            <MDBNavItem>
+                <img className="eventLinkButton" src={MapIcon} onClick={() => setActiveTab("3")} alt="details"/>
+            </MDBNavItem>
+            </MDBNav>
+            <MDBTabContent activeItem={activeTab}>
+                <MDBTabPane tabId="1">
+                    TAB 1
+                </MDBTabPane>
+                <MDBTabPane tabId="2">
+                    TAB 2
+                </MDBTabPane>
+                <MDBTabPane tabId="3">
+                    TAB 3
+                </MDBTabPane>
+            </MDBTabContent>
+        </MDBContainer>
     </dir>
     );
 
