@@ -1,16 +1,22 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { MDBDataTable} from 'mdbreact';
 
 
+/* https://www.pluralsight.com/guides/how-to-pass-data-between-react-components */
+function EventList(props) {
 
-function EventList() {
+  const[eventInfo,setEventInfo]= useState({});
+
+  function assignData(data){
+    setEventInfo({name:data.name,owner:data.owner})
+  }
     const data = {
         columns: [
           {
             label: 'Name',
             field: 'name',
             sort: 'asc',
-            width: 150
+            width: 150,
           },
           {
             label: 'Position',
@@ -22,7 +28,7 @@ function EventList() {
             label: 'Office',
             field: 'office',
             sort: 'asc',
-            width: 200
+            width: 200,
           }
         ],
         rows: [
@@ -32,7 +38,8 @@ function EventList() {
             office: 'Edinburgh',
             age: '61',
             date: '2011/04/25',
-            salary: '$320'
+            salary: '$320',
+            clickEvent: () => assignData({name:"niall",owner:"niall owner"})
           },
           {
             name: 'Garrett Winters',

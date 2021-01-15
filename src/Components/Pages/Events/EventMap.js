@@ -9,7 +9,7 @@ const mapStyles = {
 
 function EventMap() {
 
-  const mapStyles = {        
+  const mapStyles = {      
     height: "30vh",
     width: "100%"};
   
@@ -21,7 +21,7 @@ function EventMap() {
     <div className="eventMap">
       <LoadScript
       googleMapsApiKey='AIzaSyBU7NFvmb9CVDUKejzzrz0aAXGAB5hMonE'>
-      <GoogleMap
+      <GoogleMap className="eventGoogleMap"
         mapContainerStyle={mapStyles}
         zoom={13}
         center={defaultCenter}

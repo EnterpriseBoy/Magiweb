@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
+import EventDetail from './EventDetail'
 import DetailsIcon from '../../../assets/details_icon.png'
 import MapIcon from '../../../assets/map_icon.png'
 import StaffIcon from '../../../assets/staff_icon.png'
-import { MDBContainer, MDBTabPane, MDBTabContent, MDBNav, MDBNavItem, MDBNavLink,MDBRow,MDBCol,MDBBtn } from "mdbreact";
+import EventMap from './EventMap'
+import { MDBContainer, MDBTabPane, MDBTabContent, MDBNav, MDBNavItem } from "mdbreact";
 
 
 function EventDetails(){
@@ -25,13 +27,13 @@ function EventDetails(){
             </MDBNav>
             <MDBTabContent activeItem={activeTab}>
                 <MDBTabPane tabId="1">
-                    TAB 1
+                    <EventDetail/>
                 </MDBTabPane>
                 <MDBTabPane tabId="2">
                     TAB 2
                 </MDBTabPane>
-                <MDBTabPane tabId="3">
-                    TAB 3
+                <MDBTabPane className="eventDetialsTab" tabId="3">
+                    <EventMap/>
                 </MDBTabPane>
             </MDBTabContent>
         </MDBContainer>

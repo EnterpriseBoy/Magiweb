@@ -144,7 +144,11 @@ div.container.noMargin{
   height: 100%; 
   object-fit: contain; 
 }
-
+.eventGoogleMap{
+  border-radius: 25px;
+  border: solid;
+  border-color: black;
+}
 .eventsPage{
   flex-grow : 1; 
 }
@@ -162,6 +166,23 @@ ul.nav.nav-tabs{
 .eventLinkButton{
   width:40px;
   height: 40px;
+}
+
+.eventDetaislRow{
+  margin-top:20px;
+  margin-bottom: 10px;
+}
+
+.eventDetailsRowLable{
+  font-weight: bold;
+  text-align: left;
+}
+.eventDetailsRowInfo{
+  text-align: left;
+}
+
+.eventDetialsTab{
+  margin-top: 5%;
 }
 
 /* Events Page End*/
