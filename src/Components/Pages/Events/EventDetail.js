@@ -5,7 +5,7 @@ import { MDBContainer,MDBRow,MDBCol } from "mdbreact";
 function EventDetail(props){
     console.log(props.eventInfoProp);
     return(
-        <div>
+        <div className="eventDetail"> 
             <MDBContainer>
                 <MDBRow className="eventDetaislRow">
                     <MDBCol className="eventDetailsRowLable" size="3">Name:</MDBCol>

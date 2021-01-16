@@ -157,10 +157,14 @@ div.container.noMargin{
   float: left;
   width:48%;
   margin-left: 2%;
-  height: 100%;
 }
 ul.nav.nav-tabs{
   margin-top:0!important;
+}
+
+.eventDetail,.eventList{
+  min-height: 250px;
+  vertical-align: middle;
 }
 
 .eventLinkButton{
