@@ -1,4 +1,5 @@
 import React from 'react';
+import GetData from './EventMockData'
 import { MDBDataTable} from 'mdbreact';
 
 
@@ -492,6 +493,7 @@ function EventList(props) {
       };
       return (
         <div className="eventList">
+          {GetData()}
           <MDBDataTable striped bordered small data={data} entries={5} entriesOptions={[5, 20, 25]}/>
         </div>
   );
