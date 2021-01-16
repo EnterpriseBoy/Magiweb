@@ -1,14 +1,15 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { MDBContainer,MDBRow,MDBCol } from "mdbreact";
 
 
-function EventDetail(){
+function EventDetail(props){
+    console.log(props.eventInfoProp);
     return(
         <div>
             <MDBContainer>
             <MDBRow className="eventDetaislRow">
                 <MDBCol className="eventDetailsRowLable" size="3">Name:</MDBCol>
-                <MDBCol className="eventDetailsRowInfo" size="3">Dublin Marathon</MDBCol>
+                <MDBCol className="eventDetailsRowInfo" size="3">{props.eventInfoProp?.name}</MDBCol>
                 <MDBCol className="eventDetailsRowLable" size="3">Owner:</MDBCol>
                 <MDBCol className="eventDetailsRowInfo" size="3">James Murphy</MDBCol>
             </MDBRow>

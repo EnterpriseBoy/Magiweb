@@ -7,7 +7,7 @@ import EventMap from './EventMap'
 import { MDBContainer, MDBTabPane, MDBTabContent, MDBNav, MDBNavItem } from "mdbreact";
 
 
-function EventDetails(){
+function EventDetails(props){
 
   const [activeTab, setActiveTab] = useState("1");
 
@@ -27,7 +27,7 @@ function EventDetails(){
             </MDBNav>
             <MDBTabContent activeItem={activeTab}>
                 <MDBTabPane tabId="1">
-                    <EventDetail/>
+                    <EventDetail eventInfoProp={props.eventInfoProp}/>
                 </MDBTabPane>
                 <MDBTabPane tabId="2">
                     TAB 2
