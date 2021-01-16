@@ -33,7 +33,7 @@ function EventDetails(props){
                     TAB 2
                 </MDBTabPane>
                 <MDBTabPane className="eventDetialsTab" tabId="3">
-                    <EventMap/>
+                    <EventMap lat={props.eventInfoProp.lat} lng={props.eventInfoProp.lng}/>
                 </MDBTabPane>
             </MDBTabContent>
         </MDBContainer>

@@ -15,25 +15,25 @@ function EventDetail(props){
             </MDBRow>
             <MDBRow className="eventDetaislRow">
                 <MDBCol className="eventDetailsRowLable" size="3">Start Date:</MDBCol>
-                <MDBCol className="eventDetailsRowInfo" size="3">28/12/20</MDBCol>
+                <MDBCol className="eventDetailsRowInfo" size="3">{props.eventInfoProp?.startDate}</MDBCol>
                 <MDBCol className="eventDetailsRowLable" size="3">End Date:</MDBCol>
-                <MDBCol className="eventDetailsRowInfo" size="3">28/12/2020</MDBCol>
+                <MDBCol className="eventDetailsRowInfo" size="3">{props.eventInfoProp?.endDate}</MDBCol>
             </MDBRow>
             <MDBRow className="eventDetaislRow">
                 <MDBCol className="eventDetailsRowLable" size="3">Location:</MDBCol>
-                <MDBCol className="eventDetailsRowInfo" size="9">St. Stephens Green, Sandyford,Dublin </MDBCol>
+                <MDBCol className="eventDetailsRowInfo" size="9">{props.eventInfoProp?.location}</MDBCol>
             </MDBRow>
             <MDBRow className="eventDetaislRow">
                 <MDBCol className="eventDetailsRowLable" size="3">Email:</MDBCol>
-                <MDBCol className="eventDetailsRowInfo" size="9">details@details.com </MDBCol>
+                <MDBCol className="eventDetailsRowInfo" size="9">{props.eventInfoProp?.email}</MDBCol>
             </MDBRow>
             <MDBRow className="eventDetaislRow">
                 <MDBCol className="eventDetailsRowLable" size="3">Phone:</MDBCol>
-                <MDBCol className="eventDetailsRowInfo" size="9">086767676 </MDBCol>
+                <MDBCol className="eventDetailsRowInfo" size="9">{props.eventInfoProp?.phone}</MDBCol>
             </MDBRow>
             <MDBRow className="eventDetaislRow">
                 <MDBCol className="eventDetailsRowLable" size="3">Comments:</MDBCol>
-                <MDBCol className="eventDetailsRowInfo" size="9">Comment will go into this box here</MDBCol>
+                <MDBCol className="eventDetailsRowInfo" size="9">{props.eventInfoProp?.comment}</MDBCol>
             </MDBRow>
             </MDBContainer>
         </div>

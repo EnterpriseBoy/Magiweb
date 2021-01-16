@@ -7,23 +7,24 @@ const mapStyles = {
 };
 
 
-function EventMap() {
+function EventMap(props) {
 
   const mapStyles = {      
     height: "30vh",
     width: "100%"};
   
   const defaultCenter = {
-    lat: 41.3851, lng: 2.1734
+    lat: props.lat, lng: props.lng
   }
 
   return (
     <div className="eventMap">
+      {console.log(props.eventInfoProp)}
       <LoadScript
       googleMapsApiKey='AIzaSyBU7NFvmb9CVDUKejzzrz0aAXGAB5hMonE'>
       <GoogleMap className="eventGoogleMap"
         mapContainerStyle={mapStyles}
-        zoom={13}
+        zoom={17}
         center={defaultCenter}
       />
     </LoadScript>
