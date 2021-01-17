@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import EventDetail from './EventDetail'
-import DetailsIcon from '../../../assets/details_icon.png'
-import MapIcon from '../../../assets/map_icon.png'
-import StaffIcon from '../../../assets/staff_icon.png'
-import EventMap from './EventMap'
+import EventDetail from '../EventDetail/EventDetail'
+import DetailsIcon from '../../../../assets/details_icon.png'
+import MapIcon from '../../../../assets/map_icon.png'
+import StaffIcon from '../../../../assets/staff_icon.png'
+import EventMap from '../EventMap/EventMap'
 import { MDBContainer, MDBTabPane, MDBTabContent, MDBNav, MDBNavItem } from "mdbreact";
 
 

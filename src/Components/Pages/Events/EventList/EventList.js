@@ -1,5 +1,5 @@
 import React from 'react';
-import GetData from './EventMockData'
+import EventsMockData from '../Data/EventsMockData'
 import { MDBDataTable} from 'mdbreact';
 
 
@@ -24,7 +24,7 @@ function EventList(props) {
 
       return (
         <div className="eventList">
-          <MDBDataTable striped bordered small data={GetData(assignData)} entries={5} entriesOptions={[5, 20, 25]}/>
+          <MDBDataTable striped bordered small data={EventsMockData(assignData)} entries={5} entriesOptions={[5, 20, 25]}/>
         </div>
   );
 }

@@ -1,8 +1,8 @@
 import React,{useEffect,useState} from 'react';
 import { MDBBtn } from "mdbreact";
-import EventList from './EventList'
-import EventDetails from './EventDetails'
-import EventNeModal from './EventNewModal'
+import EventList from '../EventList/EventList'
+import EventDetails from '../EventDetails/EventDetails'
+import EventNeModal from '../Modals/EventNewModal'
 
 
 

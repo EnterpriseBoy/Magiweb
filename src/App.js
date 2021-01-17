@@ -2,7 +2,7 @@ import React from 'react';
 import './CSS/App.css';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/footer';
-import Events from './Components/Pages/Events/Events';
+import Events from './Components/Pages/Events/Events/Events';
 import Home from './Components/Pages/Home/Home'
 import Contact from './Components/Pages/Contact/contact';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
