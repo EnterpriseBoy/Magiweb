@@ -1,9 +1,13 @@
 import React from 'react'
+import StaffMockData from '../Data/StaffMockData';
+import {MDBDataTableV5} from "mdbreact";
 
 function EventStaff(){
     return(
         <div>
-            This is event staff
+            <MDBDataTableV5 sortable={false} hover={true} bordered small data={StaffMockData()} entries={5} entriesOptions={[5, 20, 25]}/>
         </div>
-    )
+    );
 }
+
+export default EventStaff;

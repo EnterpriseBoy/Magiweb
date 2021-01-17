@@ -1,6 +1,6 @@
 import React from 'react';
 import EventsMockData from '../Data/EventsMockData'
-import { MDBDataTable} from 'mdbreact';
+import { MDBDataTableV5} from 'mdbreact';
 
 
 /* https://www.pluralsight.com/guides/how-to-pass-data-between-react-components */
@@ -24,7 +24,7 @@ function EventList(props) {
 
       return (
         <div className="eventList">
-          <MDBDataTable striped bordered small data={EventsMockData(assignData)} entries={5} entriesOptions={[5, 20, 25]}/>
+          <MDBDataTableV5 sortable={false} hover bordered small data={EventsMockData(assignData)} entries={5} entriesOptions={[5, 20, 25]}/>
         </div>
   );
 }

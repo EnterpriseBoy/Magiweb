@@ -1,10 +1,7 @@
 import React from 'react';
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
-const mapStyles = {
-  width: '100%',
-  height: '100%'
-};
+
 
 
 function EventMap(props) {
