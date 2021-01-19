@@ -67,7 +67,7 @@ return (
             <div>Forgot Password</div>
           <MDBModalFooter>
           <MDBBtn outline color="outline-secondary"onClick={handleSubmit}>Submit</MDBBtn>
-          <MDBBtn outline color="outline-secondary" onClick={handleClose} >Cancle</MDBBtn>
+          <MDBBtn outline color="outline-secondary" onClick={handleClose} >Cancel</MDBBtn>
           </MDBModalFooter>
           </MDBContainer>
         </MDBModal>

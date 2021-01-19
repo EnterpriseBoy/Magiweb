@@ -31,7 +31,7 @@ function Menubase(props) {
         <div className="logodiv-container">
           <img src={logo} className="logo" alt="logo"/>
         </div>
-        <nav className="navbar-expand-lg navbar-light navdiv-container">
+        <nav className="navbar-expand-lg  navbar-light navdiv-container">
             <ul className="navbar-nav">
               <li className={selectButton === "home"? selecteButton: notSelectedButton }>
                 <Link to='/' className="nav-link js-scroll-trigger" id="home" onClick={e => itemSelected(e.target.id)}>Home</Link>

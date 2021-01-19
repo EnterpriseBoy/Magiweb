@@ -18,14 +18,17 @@ function Events() {
 
   return (
     <div className="App">
+        <div className="areaHeading">
+          <h3>Events</h3>
+        </div>
         <div className="eventsPage">
-        <MDBContainer>
-          <MDBRow>
-            <MDBCol size="6"><EventList setEventInfoProp = {setEventInfo}/></MDBCol>
-            <MDBCol size="6"><EventDetails eventInfoProp = {eventInfo}/></MDBCol>
-          </MDBRow>
-        </MDBContainer>
-    </div>
+          <MDBContainer>
+            <MDBRow>
+              <MDBCol size="6"><EventList setEventInfoProp = {setEventInfo}/></MDBCol>
+              <MDBCol size="6"><EventDetails eventInfoProp = {eventInfo}/></MDBCol>
+            </MDBRow>
+          </MDBContainer>
+        </div>
     <EventNeModal show={modalState} setModalState={setModalState}/>
     <div>
       <MDBBtn  color="info" outline onClick={() => setModalState(!modalState)}>New Event</MDBBtn>

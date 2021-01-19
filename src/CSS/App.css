@@ -106,7 +106,6 @@ Link Link:hover{
   margin-left: 50px;
   height: 75px;
   width: 75px;
-  margin-bottom: -20px;
 }
 
 .navdiv{
@@ -265,10 +264,15 @@ input.form-control.validate.ContactInput{
 
 .areaHeading{
   margin-top: 10px;
+  text-align: center;
 }
 
 .div.col-md-12{
   padding: 0px;
+}
+
+div.navdiv.navbar{
+  padding:0px;
 }
 
 
