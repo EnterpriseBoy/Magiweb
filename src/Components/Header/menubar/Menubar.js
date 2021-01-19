@@ -27,7 +27,7 @@ function Menubase(props) {
 
   return (
     <React.Fragment>
-      <div className="navdiv">
+      <div className="navdiv navbar">
         <div className="logodiv-container">
           <img src={logo} className="logo" alt="logo"/>
         </div>

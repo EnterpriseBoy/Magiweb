@@ -3,6 +3,7 @@ import { MDBBtn } from "mdbreact";
 import EventList from '../EventList/EventList'
 import EventDetails from '../EventDetails/EventDetails'
 import EventNeModal from '../Modals/EventNewModal'
+import {MDBContainer,MDBRow,MDBCol} from "mdbreact";
 
 
 
@@ -17,11 +18,13 @@ function Events() {
 
   return (
     <div className="App">
-      <div className="flex-container">
         <div className="eventsPage">
-        <EventList setEventInfoProp = {setEventInfo} />
-        <EventDetails eventInfoProp = {eventInfo}/>
-      </div>
+        <MDBContainer>
+          <MDBRow>
+            <MDBCol size="6"><EventList setEventInfoProp = {setEventInfo}/></MDBCol>
+            <MDBCol size="6"><EventDetails eventInfoProp = {eventInfo}/></MDBCol>
+          </MDBRow>
+        </MDBContainer>
     </div>
     <EventNeModal show={modalState} setModalState={setModalState}/>
     <div>

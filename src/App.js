@@ -23,7 +23,7 @@ function App() {
               <Route exact path="/" component={Home} />
             </Switch>
           </div>
-          <div className="footer">
+          <div>
             <Footer />
           </div>
         </div>

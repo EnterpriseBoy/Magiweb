@@ -8,28 +8,26 @@ function EventDetail(props){
         <div className="eventDetail"> 
             <MDBContainer>
                 <MDBRow className="eventDetaislRow">
-                    <MDBCol className="eventDetailsRowLable" size="3">Name:</MDBCol>
-                    <MDBCol className="eventDetailsRowInfo" size="3">{props.eventInfoProp?.name}</MDBCol>
-                    <MDBCol className="eventDetailsRowLable" size="3">Owner:</MDBCol>
-                    <MDBCol className="eventDetailsRowInfo" size="3">James Murphy</MDBCol>
+                    <MDBCol className="eventDetailsRowLable" size="2">Name:</MDBCol>
+                    <MDBCol className="eventDetailsRowInfo" size="4">{props.eventInfoProp?.name}</MDBCol>
+                    <MDBCol className="eventDetailsRowLable" size="2">Owner:</MDBCol>
+                    <MDBCol className="eventDetailsRowInfo" size="4">James Murphy</MDBCol>
                 </MDBRow>
                 <MDBRow className="eventDetaislRow">
-                    <MDBCol className="eventDetailsRowLable" size="3">Start Date:</MDBCol>
-                    <MDBCol className="eventDetailsRowInfo" size="3">{props.eventInfoProp?.startDate}</MDBCol>
-                    <MDBCol className="eventDetailsRowLable" size="3">End Date:</MDBCol>
-                    <MDBCol className="eventDetailsRowInfo" size="3">{props.eventInfoProp?.endDate}</MDBCol>
+                    <MDBCol className="eventDetailsRowLable" size="2">Start:</MDBCol>
+                    <MDBCol className="eventDetailsRowInfo" size="4">{props.eventInfoProp?.startDate}</MDBCol>
+                    <MDBCol className="eventDetailsRowLable" size="2">End:</MDBCol>
+                    <MDBCol className="eventDetailsRowInfo" size="4">{props.eventInfoProp?.endDate}</MDBCol>
                 </MDBRow>
                 <MDBRow className="eventDetaislRow">
-                    <MDBCol className="eventDetailsRowLable" size="3">Location:</MDBCol>
-                    <MDBCol className="eventDetailsRowInfo" size="9">{props.eventInfoProp?.location}</MDBCol>
+                    <MDBCol className="eventDetailsRowLable" size="2">Location:</MDBCol>
+                    <MDBCol className="eventDetailsRowInfo" size="10">{props.eventInfoProp?.location}</MDBCol>
                 </MDBRow>
                 <MDBRow className="eventDetaislRow">
-                    <MDBCol className="eventDetailsRowLable" size="3">Email:</MDBCol>
-                    <MDBCol className="eventDetailsRowInfo" size="9">{props.eventInfoProp?.email}</MDBCol>
-                </MDBRow>
-                <MDBRow className="eventDetaislRow">
-                    <MDBCol className="eventDetailsRowLable" size="3">Phone:</MDBCol>
-                    <MDBCol className="eventDetailsRowInfo" size="9">{props.eventInfoProp?.phone}</MDBCol>
+                    <MDBCol className="eventDetailsRowLable" size="2">Email:</MDBCol>
+                    <MDBCol className="eventDetailsRowInfo" size="4">{props.eventInfoProp?.email}</MDBCol>
+                    <MDBCol className="eventDetailsRowLable" size="2">Phone:</MDBCol>
+                    <MDBCol className="eventDetailsRowInfo" size="4">{props.eventInfoProp?.phone}</MDBCol>
                 </MDBRow>
                 <MDBRow className="eventDetaislRow">
                     <MDBCol className="eventDetailsRowLable" size="3">Comments:</MDBCol>

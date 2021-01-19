@@ -1,47 +1,20 @@
 import React from "react";
-import styles from "./Footerbase.module.css";
-import "../../../CSS/bootstrap.min.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faMap } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import "../../../CSS/bootstrap.min.css";
+import {MDBContainer,MDBRow,MDBCol} from "mdbreact";
 
-import { Row, Col } from 'reactstrap';
 
 function Footerbase(props) {
   return (
-    <React.Fragment>
-      <div className={styles.footer}>
-      <Row>
-            <Col className={styles.boxed}>
-              <Row><FontAwesomeIcon icon={faMap} className={styles.iconCenterCommon} /></Row>
-              <Row><div className={styles.iconCenterCommon}>info</div></Row>
-            </Col>
-            <Col className={styles.boxed}>
-  <Row><FontAwesomeIcon icon={faMap}  className={styles.iconCenterCommon} /></Row>
-              <Row><div className={styles.iconCenterCommon}>info</div></Row>
-            </Col>
-            <Col className={styles.boxed}>
-              <Row><FontAwesomeIcon icon={faMap} className={styles.iconCenterCommon} /></Row>
-              <Row><div className={styles.iconCenterCommon}>info</div></Row>
-            </Col>
-          </Row>
-          <Row>
-            <Col />
-            <Col />
-            <Col>
-              <FontAwesomeIcon icon={faFacebook} size="2x" className={styles.iconRight} />
-            </Col>
-            <Col>
-              <FontAwesomeIcon icon={faTwitter} size="2x" className={styles.iconCenter} />
-            </Col>
-            <Col>
-              <FontAwesomeIcon icon={faInstagram} size="2x" className={styles.iconLeft} />
-            </Col>
-            <Col />
-            <Col />
-          </Row>
+    <div className="footerdiv">
+      <div className="navbar">
+          <span href="#"><FontAwesomeIcon icon={faTwitter} size="2x" /></span>
+          <span href="#"><FontAwesomeIcon icon={faInstagram} size="2x" /></span>
+          <span href="#"><FontAwesomeIcon icon={faFacebook} size="2x"  /></span>
+          <span href="#"><FontAwesomeIcon icon={faLinkedin} size="2x" /></span>
       </div>
-    </React.Fragment>
+      </div>
   );
 }
 
