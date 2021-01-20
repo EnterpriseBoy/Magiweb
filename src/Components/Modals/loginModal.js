@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AnimateHeight from 'react-animate-height'
-import { MDBContainer,MDBModalFooter, MDBBtn, MDBModal} from 'mdbreact';
+import { MDBContainer,MDBModalFooter, MDBBtn, MDBModal,MDBRow,MDBCol} from 'mdbreact';
 import axios from 'axios';
 import SliderSwitch from "../Helpers/SlliderSwitch/SliderSwitch";
 
@@ -48,29 +48,33 @@ const LoginModal = (props) => {
   }
 
 return (
-        <MDBModal isOpen={props.show} centered>
-             <MDBContainer>
-            <div className="flex-grid">
-              <div className="col login_lable">Login</div>
-              <div className="col"><SliderSwitch onChange={() => onChange } isChecked={isLogin}/></div>
-              <div className="col login_lable">Register</div>
-            </div>
-            <AnimateHeight duration={ 500 } height={height}>
-                <input type="text" className="form-control login_lable" placeholder="Name" aria-label="Name" aria-describedby="basic-addon" />
-            </AnimateHeight>
-              <input type="text" onChange={(e) => setEmail(e.target.value)} className="form-control login_lable" placeholder="Email" aria-label="Email" aria-describedby="basic-addon" />
-              <input type="text" onChange={(e) => setPassword(e.target.value)} className="form-control login_lable" placeholder="Password" aria-label="Password" aria-describedby="basic-addon" />
-            <AnimateHeight duration={ 500 } height={height}>
-                <input type="text" className="form-control login_lable" placeholder="Repeat Password"  aria-label="Repeat Password" aria-describedby="basic-addon" />
-            </AnimateHeight>
-            <div>{errorResponse?.map(function(error){return <li className="error">{error}</li>})}</div>
-            <div>Forgot Password</div>
-          <MDBModalFooter>
-          <MDBBtn outline color="outline-secondary"onClick={handleSubmit}>Submit</MDBBtn>
-          <MDBBtn outline color="outline-secondary" onClick={handleClose} >Cancel</MDBBtn>
-          </MDBModalFooter>
-          </MDBContainer>
-        </MDBModal>
+  <div>
+    <MDBModal isOpen={props.show} centered>
+        <MDBRow className="loginRegisterRow">
+          <MDBCol md="3"></MDBCol>
+
+          <MDBCol className="loginCol" md="2" onClick={() => onChange()} >Login</MDBCol>
+          <MDBCol md="2"><div className="col"><SliderSwitch onChange={() => onChange } isChecked={isLogin}/></div></MDBCol>
+          <MDBCol className="registerCol" onClick={() => onChange()}  md="2">Register</MDBCol>
+
+          <MDBCol md="3"></MDBCol>
+        </MDBRow>
+        <AnimateHeight duration={ 500 } height={height}>
+            <input type="text" className="form-control login_lable" placeholder="Name" aria-label="Name" aria-describedby="basic-addon" />
+        </AnimateHeight>
+          <input className="loginModalInput" type="text" onChange={(e) => setEmail(e.target.value)} className="form-control login_lable" placeholder="Email" aria-label="Email" aria-describedby="basic-addon" />
+          <input type="text" onChange={(e) => setPassword(e.target.value)} className="form-control login_lable" placeholder="Password" aria-label="Password" aria-describedby="basic-addon" />
+        <AnimateHeight duration={ 500 } height={height}>
+            <input type="text" className="form-control login_lable" placeholder="Repeat Password"  aria-label="Repeat Password" aria-describedby="basic-addon" />
+        </AnimateHeight>
+        <div>{errorResponse?.map(function(error){return <li className="error">{error}</li>})}</div>
+        <div>Forgot Password</div>
+      <MDBModalFooter>
+        <MDBBtn outline color="outline-secondary"onClick={handleSubmit}>Submit</MDBBtn>
+        <MDBBtn outline color="outline-secondary" onClick={handleClose} >Cancel</MDBBtn>
+      </MDBModalFooter>
+    </MDBModal>
+  </div>
         );
 };
 

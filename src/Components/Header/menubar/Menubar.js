@@ -48,7 +48,8 @@ function Menubase(props) {
             </ul>
         </nav>
       </div>
-      <LoginModal show={showModal} handleClose={handleClose}/>
+      <div className="modalContent"><LoginModal show={showModal} handleClose={handleClose}/></div>
+      
     </React.Fragment>
   );
 }

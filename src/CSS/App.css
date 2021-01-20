@@ -209,25 +209,21 @@ ul.nav.nav-tabs{
 
 .contactPage{
   margin-top: 0px;
-  flex-grow : 1; 
 }
 
 .contactForm,.contactDetails{
-  float: left;
-  width:48%;
-  margin-left: 2%;
   height: 100%;
 }
 .contactMap{
   float: left;
-  margin-top: 6%;
-  width: 50%;
-  height: 100%;
+  margin-top: 15%;
+  width: 70%;
+  height: 70%;
   border-radius: 25px;
 }
 .contactMapAdress{
   float: left;
-  margin-top: 15%;
+  margin-top: 25%;
   margin-left: 10px;
 }
 .contactMapText{
@@ -275,6 +271,25 @@ div.navdiv.navbar{
   padding:0px;
 }
 
+input.form-control.login_lable{
+  width: 94%;
+  margin-left: 3%;
+}
+.loginRegisterRow{
+  margin:20px;
+}
+
+.modalContent{
+  width: 100px !important;
+}
+
+.loginCol{
+  text-align: right;
+}
+
+.registerCol{
+  text-align: left;
+}
 
 
 
