@@ -15,7 +15,7 @@ function ContactForm() {
                       <MDBInput className="ContactInput" type="textarea" rows="2" label="Message" />
                     </div>
                     <div className="text-center">
-                      <MDBBtn outline color="primary">Send
+                      <MDBBtn outline color="blue-grey">Send
                           <MDBIcon far icon="paper-plane" className="ml-1" />
                       </MDBBtn>
                     </div>

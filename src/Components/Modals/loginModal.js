@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AnimateHeight from 'react-animate-height'
-import { MDBContainer,MDBModalFooter, MDBBtn, MDBModal,MDBRow,MDBCol} from 'mdbreact';
+import { MDBModalHeader,MDBModalFooter, MDBBtn, MDBModal,MDBRow,MDBCol} from 'mdbreact';
 import axios from 'axios';
 import SliderSwitch from "../Helpers/SlliderSwitch/SliderSwitch";
 
@@ -50,6 +50,7 @@ const LoginModal = (props) => {
 return (
   <div>
     <MDBModal isOpen={props.show} centered>
+    <MDBModalHeader toggle={handleClose}>Event Login</MDBModalHeader>
         <MDBRow className="loginRegisterRow">
           <MDBCol md="3"></MDBCol>
 
