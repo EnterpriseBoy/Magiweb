@@ -70,8 +70,8 @@ return (
         <div>{errorResponse?.map(function(error){return <li className="error">{error}</li>})}</div>
         <div>Forgot Password</div>
       <MDBModalFooter>
-        <MDBBtn outline color="outline-secondary"onClick={handleSubmit}>Submit</MDBBtn>
-        <MDBBtn outline color="outline-secondary" onClick={handleClose} >Cancel</MDBBtn>
+        <MDBBtn outline color="blue-grey" onClick={handleSubmit}>Submit</MDBBtn>
+        <MDBBtn outline color="blue-grey" onClick={handleClose} >Cancel</MDBBtn>
       </MDBModalFooter>
     </MDBModal>
   </div>

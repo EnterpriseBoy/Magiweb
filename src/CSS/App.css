@@ -291,5 +291,11 @@ input.form-control.login_lable{
   text-align: left;
 }
 
+button.btn-info{
+  border-radius: 25px;
+}
 
+button.btn-blue-grey{
+  border-radius: 25px;
+}
 

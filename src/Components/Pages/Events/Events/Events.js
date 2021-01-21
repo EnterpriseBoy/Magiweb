@@ -31,7 +31,7 @@ function Events() {
         </div>
     <EventNeModal show={modalState} setModalState={setModalState}/>
     <div>
-      <MDBBtn  color="info" outline onClick={() => setModalState(!modalState)}>New Event</MDBBtn>
+      <MDBBtn  outline color="blue-grey"  outline onClick={() => setModalState(!modalState)}>New Event</MDBBtn>
     </div>
   </div>  
   );

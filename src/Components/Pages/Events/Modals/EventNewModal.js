@@ -48,8 +48,8 @@ function EventNewModal(props){
                         </div>
                     </MDBModalBody>
                     <MDBModalFooter>
-                        <MDBBtn outline color="outline-secondary">Submit</MDBBtn>
-                        <MDBBtn outline color="outline-secondary" onClick={() => props.setModalState(false)} >Cancle</MDBBtn>
+                        <MDBBtn outline color="blue-grey" >Submit</MDBBtn>
+                        <MDBBtn outline color="blue-grey"  onClick={() => props.setModalState(false)} >Cancle</MDBBtn>
                     </MDBModalFooter>
                 </MDBContainer>
             </MDBModal>
